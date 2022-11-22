@@ -4,77 +4,51 @@
     <meta charset="UTF-8" />
     <title>SEW</title>
     <script src="CalculadoraMilan.js"></script>
-    <script src="CalculadoraCientifica.js"></script>
-    <link rel="stylesheet" type="text/css" href="CalculadoraCientifica.css" />
+    <link rel="stylesheet" type="text/css" href="CalculadoraMilan.css" />
     <meta name ="author" content ="Aaron" >
-    <meta name ="description" content ="Calculadora Consumo de Agua" >
-    <meta name ="keywords" content ="Calculadora, Agua, RPN" >
+    <meta name ="description" content ="Calculadora Milan" >
+    <meta name ="keywords" content ="Calculadora, Milan" >
     <meta name ="viewport" content="width=device-width,initial scale=1.0">
 
 </head>
 <body>
     <header>
-        <h1>Calculadora Cientifica</h1>
-
-    <label for="area"><strong>UO277819</strong></label>
+        <h1>Calculadora Milán</h1>
     </header>
-        
+    <section>
+        <label for="area"><strong>UO277819</strong></label>
+    </section>
     <form>
-
         <input  type="text" id="area" disable/>
-        <input  type="button" value="DEG"  onclick="calculadora.CahngeRad()"/>
-        <input  type="button" value="HYP"  onclick="calculadora.Changehyp()"/>
-        <input  type="button" value="F-E"  onclick="calculadora.fe()"/>
-    </form>
-    <form>
-        <input  type="button" value="MC"  onclick="calculadora.memMc()"/>
-        <input  type="button" value="MR"  onclick="calculadora.memMr()"/>
-        <input  type="button" value="M+"  onclick="calculadora.memMas()"/>
-        <input  type="button" value="M-"  onclick="calculadora.menMeno()"/>
-        <input  type="button" value="MS"  onclick="calculadora.memMs()"/>
-       
-        <input  type="button" value="x^2"  onclick="calculadora.elevar2()"/>
-        <input  type="button" value="x^y"  onclick="calculadora.elevarxy()"/>
-        <input  type="button" value="sin"  onclick="calculadora.sin()"/>
-        <input  type="button" value="cos"  onclick="calculadora.cos()"/>
-        <input  type="button" value="tan"  onclick="calculadora.tan()"/>
+        <input  type="button" value="On/C"  onclick="calculadoraMilan.clear()"/>
+        <input  type="button" value="CE"  onclick="calculadoraMilan.borrar()"/>
+        <input  type="button" value="&#177;"  onclick="calculadoraMilan.masMenos()"/>
+        <input  type="button" value="&Sqrt;"  onclick="calculadoraMilan.raiz()"/>
+        <input  type="button" value="%"  onclick="calculadoraMilan.porcentaje()"/>
 
-        <input  type="button" value="&Sqrt;"  onclick="calculadora.raiz()"/>
-        <input  type="button" value="10^x"  onclick="calculadora.elevar10x()"/>
-        <input  type="button" value="log"  onclick="calculadora.logaritmo()"/>
-        <input  type="button" value="Exp"  onclick="calculadora.exponencial()"/>
-        <input  type="button" value="Mod"  onclick="calculadora.mod()"/>
+        <input  type="button" value="7"  onclick="calculadoraMilan.numero('7')"/>
+        <input  type="button" value="8"  onclick="calculadoraMilan.numero('8')"/>
+        <input  type="button" value="9"  onclick="calculadoraMilan.numero('9')"/>
+        <input  type="button" value="x"  onclick="calculadoraMilan.multiplicar()"/>
+        <input  type="button" value="&#247;"  onclick="calculadoraMilan.dividir()"/>
 
-        <input  type="button" value="&#8679;"  onclick="calculadora.ChangeArco()"/>
-        <input  type="button" value="CE"  onclick="calculadora.borrar()"/>
-        <input  type="button" value="C"  onclick="calculadora.clear()"/>
-        <input  type="button" value="&#9003;"  onclick="calculadora.borrar()"/>
-        <input  type="button" value="&#247;"  onclick="calculadora.dividir()"/>
-    
-        <input  type="button" value="&pi;"  onclick="calculadora.pi()"/>
-        <input  type="button" value="7"  onclick="calculadora.numero('7')"/>
-        <input  type="button" value="8"  onclick="calculadora.numero('8')"/>
-        <input  type="button" value="9"  onclick="calculadora.numero('9')"/>
-        <input  type="button" value="x"  onclick="calculadora.multiplicar()"/>
-       
-        <input  type="button" value="n!"  onclick="calculadora.factorial()" />
-        <input  type="button" value="4"  onclick="calculadora.numero('4')" />
-        <input  type="button" value="5"  onclick="calculadora.numero('5')"/>
-        <input  type="button" value="6"  onclick="calculadora.numero('6')"/>
-        <input  type="button" value="-"  onclick="calculadora.resta()"/>
+        <input  type="button" value="4"  onclick="calculadoraMilan.numero('4')" />
+        <input  type="button" value="5"  onclick="calculadoraMilan.numero('5')"/>
+        <input  type="button" value="6"  onclick="calculadoraMilan.numero('6')"/>
+        <input  type="button" value="-"  onclick="calculadoraMilan.resta()"/>
+        <input  type="button" value="Mrc"  onclick="calculadoraMilan.memoria()"/>
 
-        <input  type="button" value="&#177;"  onclick="calculadora.masMenos()"/>
-        <input  type="button" value="1"  onclick="calculadora.numero('1')"/>
-        <input  type="button" value="2"  onclick="calculadora.numero('2')"/>
-        <input  type="button" value="3"  onclick="calculadora.numero('3')"/>
-        <input  type="button" value="+"  onclick="calculadora.suma()"/>
+        <input  type="button" value="1"  onclick="calculadoraMilan.numero('1')"/>
+        <input  type="button" value="2"  onclick="calculadoraMilan.numero('2')"/>
+        <input  type="button" value="3"  onclick="calculadoraMilan.numero('3')"/>
+        <input  type="button" value="+"  onclick="calculadoraMilan.suma()"/>
+        <input  type="button" value="M-"  onclick="calculadoraMilan.memMenos()"/>
+
+        <input  type="button" value="0"  onclick="calculadoraMilan.numero('0')"/>
+        <input  type="button" value="."  onclick="calculadoraMilan.decimal()"/>
+        <input  type="button" value="="  onclick="calculadoraMilan.resolver()"/>
         
-        <input  type="button" value="("  onclick="calculadora.parentesisI()"/>
-        <input  type="button" value=")"  onclick="calculadora.parentesisD()"/>
-        <input  type="button" value="0"  onclick="calculadora.numero('0')"/>
-        <input  type="button" value="."  onclick="calculadora.punto()"/>
-        <input  type="button" value="="  onclick="calculadora.resolver()"/>
-        
+        <input  type="button" value="M+"  onclick="calculadoraMilan.memMas()"/>
     </form>
 </body>
 </html>
