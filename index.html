@@ -15,12 +15,33 @@
     <header>
         <h1>Calculadora de Agua</h1>
     </header>
-    <label for="area">Aaron</label>
+    <section>
+        <h2>Nuevos Métodos</h2>
+        <p>CAV: Es el consumo de agua de una vivienda, los parametros que se les debe pasar son
+            el numero de personas que viven en ella, y el numero de fugas que hay.
+        </p>
+        <p>PAV: Es el dinero que costará el consumo de agua de la vivienda, usa los mismo parametros
+            que la funcion anterior 'CAV'.
+        </p>
+        <p>CAE: Es el consumo de agua de una edificio, los parametros que se les debe pasar son
+           el numero de pisos que hay en la edificacion, el numero de personas que viven en el,
+            y el numero de fugas que hay.
+        </p>
+        <p>PAE: Es el dinero que costará el consumo de agua de un edificio, usa los mismo parametros
+            que la funcion anterior 'CAE'.
+        </p>
+        <p>PA: Calcula el dinero que cuesta el consumo de X litros de agua, para usarlo solo se debe introducir 
+            los litros de agua.
+        </p>
+        <p>En el momento en el que se introduzcan los datos, se deben poner en el orden que dicen las funciones.
+        </p>
+    <label for="area"><b>UO277819</b></label>
+    </section>
     <form>
 
         <textarea id="area" rows="5" cols="15" disabled></textarea>
 
-        <input  type="button" value="/"  onclick="calculadora.dividir()"/>
+        <input  type="button" value="&#247;"  onclick="calculadora.dividir()"/>
         <input  type="button" value="7"  onclick="calculadora.numero('7')"/>
         <input  type="button" value="8"  onclick="calculadora.numero('8')"/>
         <input  type="button" value="9"  onclick="calculadora.numero('9')"/>
@@ -44,7 +65,7 @@
         <input  type="button" value="+"  onclick="calculadora.sumar()"/>
         <input  type="button" value="atan"  onclick="calculadora.atan()"/>
 
-        <input  type="button" value="Raiz"  onclick="calculadora.raiz()"/>
+        <input  type="button" value="&Sqrt;"  onclick="calculadora.raiz()"/>
         <input  type="button" value="C"  onclick="calculadora.clear()"/>
         <input  type="button" value="."  onclick="calculadora.punto()"/>
         <input  type="button" value="ENTER"  onclick="calculadora.resolver()"/>
