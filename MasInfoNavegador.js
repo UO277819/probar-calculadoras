@@ -1,0 +1,15 @@
+document.write("<p>La version es:");
+document.write(navegador.version);
+document.write("</p>");
+document.write("<p>La plataforma es:");
+document.write(navegador.plataforma);
+document.write("</p>");
+document.write("<p>El vendedor es:");
+document.write(navegador.vendedor);
+document.write("</p>");
+document.write("<p>El agente es:");
+document.write(navegador.agente);
+document.write("</p>");
+document.write("<p>Se usa java :");
+document.write(navegador.java);
+document.write("</p>");
