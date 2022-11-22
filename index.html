@@ -4,39 +4,21 @@
     <meta charset="UTF-8" />
     <title>SEW</title>
     <script src="CalculadoraRPN.js"></script>
-    <script src="CalculadoraEspecializada.js"></script>
-    <link rel="stylesheet" type="text/css" href="CalculadoraEspecializada.css" />
+    <link rel="stylesheet" type="text/css" href="CalculadoraRPN.css" />
     <meta name ="author" content ="Aaron" >
     <meta name ="description" content ="Calculadora Consumo de Agua" >
     <meta name ="keywords" content ="Calculadora, Agua, RPN" >
     <meta name ="viewport" content="width=device-width,initial scale=1.0">
+
 </head>
 <body>
     <header>
-        <h1>Calculadora de Agua</h1>
+        <h1>Calculadora RPN</h1>
+        
+        <label for="area"><strong>UO277819</strong></label>
+
     </header>
-    <section>
-        <h2>Nuevos Métodos</h2>
-        <p>CAV: Es el consumo de agua de una vivienda, los parametros que se les debe pasar son
-            el numero de personas que viven en ella, y el numero de fugas que hay.
-        </p>
-        <p>PAV: Es el dinero que costará el consumo de agua de la vivienda, usa los mismo parametros
-            que la funcion anterior 'CAV'.
-        </p>
-        <p>CAE: Es el consumo de agua de una edificio, los parametros que se les debe pasar son
-           el numero de pisos que hay en la edificacion, el numero de personas que viven en el,
-            y el numero de fugas que hay.
-        </p>
-        <p>PAE: Es el dinero que costará el consumo de agua de un edificio, usa los mismo parametros
-            que la funcion anterior 'CAE'.
-        </p>
-        <p>PA: Calcula el dinero que cuesta el consumo de X litros de agua, para usarlo solo se debe introducir 
-            los litros de agua.
-        </p>
-        <p>En el momento en el que se introduzcan los datos, se deben poner en el orden que dicen las funciones.
-        </p>
-    <label for="area"><strong>UO277819</strong></label>
-    </section>
+        
     <form>
 
         <textarea id="area" rows="5" cols="15" disabled></textarea>
@@ -69,12 +51,7 @@
         <input  type="button" value="C"  onclick="calculadora.clear()"/>
         <input  type="button" value="."  onclick="calculadora.punto()"/>
         <input  type="button" value="ENTER"  onclick="calculadora.resolver()"/>
-        
-        <input  type="button" value="CAV"  onclick="calculadora.consumoAguaVivienda()"/>
-        <input  type="button" value="PAV"  onclick="calculadora.precioVivienda()"/>
-        <input  type="button" value="CAE"  onclick="calculadora.consumoAguaEdificio()"/>
-        <input  type="button" value="PAE"  onclick="calculadora.precioEdificio()"/>
-        <input  type="button" value="PA"  onclick="calculadora.calcularPrecio()"/>
+  
     </form>
 </body>
 </html>
