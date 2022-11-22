@@ -1,0 +1,35 @@
+/* Especificidad 001*/
+body{
+    background-color:white;
+    color:black;
+}
+/* Especificidad 001*/
+h1{
+    text-align: center;
+	background-color:white;
+    color:red;
+}
+/* Especificidad 001*/
+h2{
+    color:rgb(17, 116, 71);
+	background-color:white;
+    padding: 2em;
+}
+/* Especificidad 001*/
+h3{
+    color:rgb(150, 91, 46);
+	background-color:white;
+    padding: 2em;
+}
+/* Especificidad 001*/
+h4{
+    color:rgb(3, 17, 11);
+	background-color:white;
+    padding: 2em;
+}
+/* Especificidad 001*/
+p{
+    padding: 3em;
+    color:rgb(70, 17, 193);
+	background-color:white;
+}
