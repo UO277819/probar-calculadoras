@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>SEW</title>
+    <script src="CalculadoraRPN.js"></script>
+    <script src="CalculadoraEspecializada.js"></script>
+    <link rel="stylesheet" type="text/css" href="CalculadoraEspecializada.css" />
+</head>
+<body>
+    <header>
+        <h1>Calculadora de Agua</h1>
+    </header>
+
+    <form>
+
+        <textarea  rows="5" cols="15" disabled></textarea>
+
+        <input  type="button" value="/"  onclick="calculadora.dividir()"/>
+        <input  type="button" value="7"  onclick="calculadora.numero('7')"/>
+        <input  type="button" value="8"  onclick="calculadora.numero('8')"/>
+        <input  type="button" value="9"  onclick="calculadora.numero('9')"/>
+        <input  type="button" value="*"  onclick="calculadora.multiplicar()"/>
+
+        <input  type="button" value="sin"  onclick="calculadora.sin()"/>
+        <input  type="button" value="4"  onclick="calculadora.numero('4')"/>
+        <input  type="button" value="5"  onclick="calculadora.numero('5')"/>
+        <input  type="button" value="6"  onclick="calculadora.numero('6')"/>
+        <input  type="button" value="asin"  onclick="calculadora.asin()"/>
+
+        <input  type="button" value="cos"  onclick="calculadora.cos()"/>
+        <input  type="button" value="1"  onclick="calculadora.numero('1')"/>
+        <input  type="button" value="2"  onclick="calculadora.numero('2')"/>
+        <input  type="button" value="3"  onclick="calculadora.numero('3')"/>
+        <input  type="button" value="acos"  onclick="calculadora.acos()"/>
+       
+        <input  type="button" value="tan"  onclick="calculadora.tan()"/>
+        <input  type="button" value="-"  onclick="calculadora.restar()"/>
+        <input  type="button" value="0"  onclick="calculadora.numero('0')"/>
+        <input  type="button" value="+"  onclick="calculadora.sumar()"/>
+        <input  type="button" value="atan"  onclick="calculadora.atan()"/>
+
+        <input  type="button" value="Raiz"  onclick="calculadora.raiz()"/>
+        <input  type="button" value="C"  onclick="calculadora.clear()"/>
+        <input  type="button" value="."  onclick="calculadora.punto()"/>
+        <input  type="button" value="ENTER"  onclick="calculadora.resolver()"/>
+        
+        <input  type="button" value="CAV"  onclick="calculadora.consumoAguaVivienda()"/>
+        <input  type="button" value="PAV"  onclick="calculadora.precioVivienda()"/>
+        <input  type="button" value="CAE"  onclick="calculadora.consumoAguaEdificio()"/>
+        <input  type="button" value="PAE"  onclick="calculadora.precioEdificio()"/>
+        <input  type="button" value="PA"  onclick="calculadora.calcularPrecio()"/>
+    </form>
+</body>
+</html>

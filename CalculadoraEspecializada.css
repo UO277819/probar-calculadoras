@@ -1,0 +1,73 @@
+
+body{
+    background-color: azure;
+    color: black;
+}
+
+h1{
+    text-align: center;
+}
+body>form{
+    display:grid;
+    grid-template-columns: repeat(5,auto);
+    grid-template-rows: repeat(8,auto);
+    grid-gap:10px;
+    background-color: rgb(17, 221, 221);
+    color:black;
+    border-radius: 1em;
+}
+body>form>textarea:first-of-type{
+    grid-column-start: 1;
+    grid-column-end: 6;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding: 1em;
+    font-size: 2em;
+    text-align: right;
+    height: 70px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 1em;
+    background-color: rgb(236, 245, 245);
+    color:black;
+}
+
+body>form>input[type="button"]{
+    background-color:rgb(170, 184, 184);
+    border-radius: 1em;
+    margin-left: 10px;
+    margin-right:10px;
+    font-size: 2em;
+    color:black;
+}
+
+body>form>input[value="ENTER"]{
+    background-color:rgb(223, 17, 17);
+    grid-column-end: 6;
+    grid-column-start: 4;
+    color:black;
+}
+
+body>form>input[type = button][value = "0" ],
+body>form>input[type = button][value = "1" ],
+body>form>input[type = button][value = "2" ],
+body>form>input[type = button][value = "3" ],
+body>form>input[type = button][value = "4" ],
+body>form>input[type = button][value = "5" ],
+body>form>input[type = button][value = "6" ],
+body>form>input[type = button][value = "7" ],
+body>form>input[type = button][value = "8" ],
+body>form>input[type = button][value = "9" ] {
+    color: black;
+    background-color: aliceblue;
+}
+
+body>form>input[type = button][value = "CAV" ],
+body>form>input[type = button][value = "PAV" ],
+body>form>input[type = button][value = "CAE" ],
+body>form>input[type = button][value = "PAE" ],
+body>form>input[type = button][value = "PA" ]  {
+    color: black;
+    background-color: rgb(116, 160, 243);
+}
