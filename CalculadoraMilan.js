@@ -121,14 +121,16 @@ class CalculadoraMilan{
                 this.memoria();
             }else if(tecla=="Enter" || tecla=="="){
                 this.resolver();
-            }else if(tecla=="C" || tecla=="c" || tecla=="Delete"){
+            }else if(tecla=="C"){
                 this.clear();
-            }else if(tecla=="r" || tecla=="R"){
-                this.raiz();
-            }else if(tecla=="g" || tecla=="G"){
-                this.masMenos();
-            }else if(tecla=="B" || tecla=="b"){
+            }else if(tecla=="c"){
                 this.borrar();
+            }else if(tecla=="s"){
+                this.masMenos();
+            }else if(tecla=="p"){
+                this.porcentaje();
+            }else if(tecla=="r"){
+                this.raiz();
             }
         })
     }
@@ -136,3 +138,5 @@ class CalculadoraMilan{
         document.querySelector("input[type=text]").value=this.pantalla;
     }
 }
+var calculadoraMilan=new CalculadoraMilan();
+calculadoraMilan.reconocerTeclas();
