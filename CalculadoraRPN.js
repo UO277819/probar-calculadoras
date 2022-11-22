@@ -1,4 +1,4 @@
-
+"use strict"
 class CalculadoraRPN{
     constructor(){
         this.pantalla="";
@@ -125,10 +125,10 @@ class CalculadoraRPN{
                 || tecla=="5" || tecla=="6" || tecla=="7" || tecla=="8"
                 || tecla=="9"){
                     this.numero(tecla);
-            }else if(tecla=="+"){
-                this.suma();
+            }else if(tecla=='+'){
+                this.sumar();
             }else if(tecla=="-"){
-                this.resta();
+                this.restar();
             }else if(tecla=="*"){
                 this.multiplicar();
             }else if(tecla=="/"){
@@ -157,3 +157,5 @@ class CalculadoraRPN{
         })
     }
 }
+var calculadora=new CalculadoraRPN();
+calculadora.reconocerTeclas();
