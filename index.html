@@ -6,15 +6,19 @@
     <script src="CalculadoraRPN.js"></script>
     <script src="CalculadoraEspecializada.js"></script>
     <link rel="stylesheet" type="text/css" href="CalculadoraEspecializada.css" />
+    <meta name ="author" content ="Aaron" >
+    <meta name ="description" content ="Calculadora Consumo de Agua" >
+    <meta name ="keywords" content ="Calculadora, Agua, RPN" >
+    <meta name ="viewport" content="width=device-width,initial scale=1.0">
 </head>
 <body>
     <header>
         <h1>Calculadora de Agua</h1>
     </header>
-
+    <label for="area"></label>
     <form>
 
-        <textarea  rows="5" cols="15" disabled></textarea>
+        <textarea id="area" rows="5" cols="15" disabled></textarea>
 
         <input  type="button" value="/"  onclick="calculadora.dividir()"/>
         <input  type="button" value="7"  onclick="calculadora.numero('7')"/>
