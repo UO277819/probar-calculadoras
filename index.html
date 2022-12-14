@@ -3,19 +3,55 @@
 <head>
     <meta charset="UTF-8" />
     <title>SEW</title>
-    <script src="Cabecera.js"></script>
-    <link rel="stylesheet" type="text/css" href="Ejercicio1.css" />
-	<meta name ="author" content ="Aaron" >
-    <meta name ="description" content ="Ejercicio 1" >
-    <meta name ="keywords" content ="Ejercicio 1" >
+    <script src="CalculadoraRPN.js"></script>
+    <link rel="stylesheet" type="text/css" href="CalculadoraRPN.css" />
+    <meta name ="author" content ="Aaron" >
+    <meta name ="description" content ="Calculadora RPN" >
+    <meta name ="keywords" content ="Calculadora, RPN" >
     <meta name ="viewport" content="width=device-width,initial scale=1.0">
 
 </head>
 <body>
-    <script src="Titulo1.js"></script>
-    <script src="Titulo2.js"></script>
-    <script src="Titulo3.js"></script>
-    <script src="Titulo4.js"></script>
-    <script src="Parrafos.js"></script>
+    <header>
+        <h1>Calculadora RPN</h1>
+        
+        <label for="area"><strong>UO277819</strong></label>
+
+    </header>
+        
+    <form>
+
+        <textarea id="area" rows="5" cols="15" disabled></textarea>
+
+        <input  type="button" value="&#247;"  onclick="calculadora.dividir()"/>
+        <input  type="button" value="7"  onclick="calculadora.numero('7')"/>
+        <input  type="button" value="8"  onclick="calculadora.numero('8')"/>
+        <input  type="button" value="9"  onclick="calculadora.numero('9')"/>
+        <input  type="button" value="*"  onclick="calculadora.multiplicar()"/>
+
+        <input  type="button" value="sin"  onclick="calculadora.sin()"/>
+        <input  type="button" value="4"  onclick="calculadora.numero('4')"/>
+        <input  type="button" value="5"  onclick="calculadora.numero('5')"/>
+        <input  type="button" value="6"  onclick="calculadora.numero('6')"/>
+        <input  type="button" value="asin"  onclick="calculadora.asin()"/>
+
+        <input  type="button" value="cos"  onclick="calculadora.cos()"/>
+        <input  type="button" value="1"  onclick="calculadora.numero('1')"/>
+        <input  type="button" value="2"  onclick="calculadora.numero('2')"/>
+        <input  type="button" value="3"  onclick="calculadora.numero('3')"/>
+        <input  type="button" value="acos"  onclick="calculadora.acos()"/>
+       
+        <input  type="button" value="tan"  onclick="calculadora.tan()"/>
+        <input  type="button" value="-"  onclick="calculadora.restar()"/>
+        <input  type="button" value="0"  onclick="calculadora.numero('0')"/>
+        <input  type="button" value="+"  onclick="calculadora.sumar()"/>
+        <input  type="button" value="atan"  onclick="calculadora.atan()"/>
+
+        <input  type="button" value="&Sqrt;"  onclick="calculadora.raiz()"/>
+        <input  type="button" value="C"  onclick="calculadora.clear()"/>
+        <input  type="button" value="."  onclick="calculadora.punto()"/>
+        <input  type="button" value="ENTER"  onclick="calculadora.resolver()"/>
+  
+    </form>
 </body>
 </html>
